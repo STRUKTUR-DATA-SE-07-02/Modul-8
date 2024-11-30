@@ -150,5 +150,18 @@ int main() {
 
     cout << endl;
     q.viewQueue();
+    cout << "Jumlah antrian = " << q.countQueue() << endl;
+
+    q.dequeueAntrian();
+    cout << endl;
+    q.viewQueue();
+    cout << "Jumlah antrian setelah dihapus 1= " << q.countQueue() << endl;
+
+    q.clearQueue();
+    cout << endl;
+    q.viewQueue();
+
+    cout << "Jumlah antrian setelah di-clear= " << q.countQueue() << endl;
+    
     return 0;
 }
