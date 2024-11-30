@@ -44,6 +44,7 @@ public:
         return front == nullptr;
     }
 
+
     void enqueueAntrian(Mahasiswa data) {
         if (isFull()) {
             cout << "Antrian penuh" << endl;
@@ -106,22 +107,37 @@ public:
     }
 };
 
+
 int main() {
     Queue q;
 
     // Input data mahasiswa
     string nama, nim;
-    int maksimalQueue = q.getMaksimalQueue();
+    int maksimalQueue = q.getMaksimalQueue(); // Mendapatkan nilai maksimalQueue
 
     for (int i = 0; i < maksimalQueue; i++) {
         cout << "Masukkan nama mahasiswa ke-" << i+1 << ": ";
         getline(cin, nama);
         cout << "Masukkan NIM mahasiswa ke-" << i+1 << ": ";
         getline(cin, nim);
+
         q.enqueueAntrian(Mahasiswa(nama, nim));
     }
 
     cout << endl;
     q.viewQueue();
+    cout << "Jumlah antrian = " << q.countQueue() << endl;
+
+    q.dequeueAntrian();
+    cout << endl;
+    q.viewQueue();
+    cout << "Jumlah antrian setelah dihapus 1= " << q.countQueue() << endl;
+
+    q.clearQueue();
+    cout << endl;
+    q.viewQueue();
+
+    cout << "Jumlah antrian setelah di-clear= " << q.countQueue() << endl;
+
     return 0;
 }
