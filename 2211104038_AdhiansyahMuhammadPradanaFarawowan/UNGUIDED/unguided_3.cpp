@@ -85,7 +85,7 @@ public:
             return;
         }
 
-        // Biarkan antrina tetap utuh, ubah hanya pada outputnya
+        // Biarkan antrean tetap utuh, ubah hanya pada outputnya
         Node *current = front;
         Node *sorted = nullptr;
         Node *temp = nullptr;
