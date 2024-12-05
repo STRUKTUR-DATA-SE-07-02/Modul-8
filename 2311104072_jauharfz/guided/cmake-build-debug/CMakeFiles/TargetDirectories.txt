@@ -1,0 +1,3 @@
+D:/Stuktur Data/10_Pengenalan_CPP_Bagian_10/2311104072_jauharfz/guided/cmake-build-debug/CMakeFiles/guided.dir
+D:/Stuktur Data/10_Pengenalan_CPP_Bagian_10/2311104072_jauharfz/guided/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Stuktur Data/10_Pengenalan_CPP_Bagian_10/2311104072_jauharfz/guided/cmake-build-debug/CMakeFiles/rebuild_cache.dir
